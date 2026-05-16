@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+/* Strike-through for BlockNote Checklists */
+[data-content-type="checkListItem"][data-checked="true"] .bn-inline-content {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
